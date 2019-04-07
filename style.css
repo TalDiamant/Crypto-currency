@@ -1,0 +1,244 @@
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+#parallax-img {
+  background-image: url("./images/4.jpg");
+  min-height: 24rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#dinamicDiv {
+  min-height: 30rem;
+  background-color: #597b7d;
+  font-size: 36px;
+}
+
+a.navbar-brand {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 26px;
+}
+
+.jumbotron.jumbotron-fluid {
+  padding: 2rem 1rem;
+  margin-bottom: -2rem;
+  background-color: lightgrey;
+  border-radius: 0.5rem;
+  width: initial;
+  display: inline-block;
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+
+.jumbotron {
+  margin-bottom: 0rem;
+  background-color: lightgrey;
+}
+
+#loaderDiv {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #5fb8bd;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.card {
+  width: 18rem;
+  position: relative;
+  display: inline-table;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
+  margin: 1rem;
+  margin-left: 5.2rem;
+}
+
+.card-body {
+  width: 18rem;
+}
+
+div#collapseShow {
+  font-size: 16px;
+  margin: auto;
+  width: 15rem;
+  height: 19rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider {
+  background-color: #5fb8bd;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+label.switch {
+  float: right;
+}
+
+.collapser {
+  display: inline-block;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #666;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  cursor: pointer;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.collapser:hover {
+  background-color: #555;
+}
+
+.active {
+  background-color: #555;
+  background-color: #666;
+  color: white;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 5px 12px;
+  background-color: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #666;
+  color: white;
+}
+
+button#search-button {
+  padding: 0.3rem;
+}
+
+.modal-body {
+  display: contents;
+}
+
+.modal-content {
+  width: 20rem;
+  margin: auto;
+}
+
+.toggle-card {
+  padding: 1rem;
+}
+
+h1 {
+  display: inline;
+  font-size: 1.2rem;
+}
+
+.button.btn.btn-primary.save-changes {
+  outline: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.bg-light {
+  background-color: lightgrey !important;
+}
+/*# sourceMappingURL=style.css.map */
